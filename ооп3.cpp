@@ -47,12 +47,13 @@ class ShapeContainer {
    vector<shared_ptr<SFigure>> shapes;
 
 public:
-    // Функція для додавання нових елементів
+    
     void addShape(shared_ptr<SFigure> shape) {
         shapes.push_back(shape);
     }
 
-    // Функція для знаходження фігури з найменшим об'ємом
+
+
     shared_ptr<SFigure> findSmallestVolumeShape() const {
         if (shapes.empty()) return nullptr;
 
